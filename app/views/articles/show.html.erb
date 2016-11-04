@@ -1,0 +1,7 @@
+<% if @article.errors.none? %>
+<h2> Article successfully created! </h2>
+<% end %>
+<h1>This is your selected article! It has the id <%= @article.id %> </h1>
+
+<p>Title: <%= @article.title %></p>
+<p> Description: <%= @article.description %></p>
