@@ -1,7 +1,12 @@
-<h1>This is your selected article! It has the id <%= @article.id %> </h1>
+<p1>Article-ID: <%= @article.id %> </p1><br>
 
-<p>Title: <%= @article.title %></p>
-<p> Description: <%= @article.description %></p>
+<p3> Title: </p3><br>
+ <%= @article.title %>
+ <br>
+<p3> Description:</p3><br>
+ <%= @article.description %>
+ <br>
+ <br>
 <%= link_to "Back to the article list", articles_path%>
 <br>
 <%= link_to "edit", edit_article_path(@article)%>

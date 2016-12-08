@@ -1,0 +1,72 @@
+$navbar-default-bg: white;
+$navbar-default-border: left;
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.sidebar-nav {
+
+  margin: 1em;
+  z-index: -1;
+  width:12em;
+  height: auto;
+  text-align: left;
+}
+
+#logo {
+  width: 12em;
+}
+
+.jumbotron {
+  background-image: asset-url("beauties.jpg");
+  background-opacity: 0.2;
+  background-size: 750px auto;
+  background-position: top right;
+}
+.center{
+  text-align: center;
+}
+
+.nav {
+  position:relative;
+  a {  color: #202020;};
+  font-family: "Myriad Pro", sans;
+  letter-spacing:1.5px;
+  font-stretch: condensed;
+  font-weight: lighter;
+  font-size: 0.8em;
+  line-height: 0.2;
+}
+
+#tbcolumn {
+  padding-right: 1em;
+}
+
+.content-area{
+  border-style:solid;
+  border-width:1px;
+  border-color: #A4A4A4;
+  padding:1em;
+  margin:1em;
+  font-family: "Myriad Pro", sans;
+  position: relative;
+  float:left;
+  width:40em;
+  p1 {
+    font-family: "Arial", sans;
+    font-size: 2em;
+  }
+
+  p2 {
+    font-family: "Arial", sans;
+  }
+
+  p3 {
+    font-family: "Helvetica", sans;
+    letter-spacing:1.5px;
+    font-stretch: condensed;
+    font-weight: lighter;
+    font-size: 0.7em;
+    line-height: 0.6;
+  }
+}

@@ -2,32 +2,25 @@
 <html>
   <head>
     <title>INDEX</title>
-
   </head>
 
   <body>
-
-
-      <h1>Listing all articles!</h1>
-      <br>
-        <%= link_to "Create new Article", new_article_path %>
-
-      <br>
-
-      <table>
+    <p1>Listing all articles!</p1><br>
+      <%= link_to "Create new Article", new_article_path %>
+    <table>
+      <tr>
+        <th> Title </th>
+        <th> Description </th>
+      </tr>
+      <% @articles.each do|article| %>
         <tr>
-          <th> Title </th>
-          <th> Description </th>
+          <td id=tbcolumn > <%= article.title %> </td>
+          <td id=tbcolumn>  <%= article.description %> </td>
+          <td id=tbcolumn> <%= link_to "edit", edit_article_path(article)%>,  </td>
+          <td id=tbcolumn> <%= link_to "show",article_path(article)%>,  </td>
+          <td id=tbcolumn> <%= link_to "delete",article_path(article), method: :delete, data: {confirm:"Are you sure?"}%></td>
         </tr>
-        <% @articles.each do|article| %>
-        <tr>
-          <td> <%= article.title %> </td>
-          <td>  <%= article.description %> </td>
-          <td> <%= link_to "edit", edit_article_path(article)%></td>
-          <td> <%= link_to "show",article_path(article)%></td>
-          <td> <%= link_to "delete",article_path(article), method: :delete, data: {confirm:"Are you sure?"}%></td>
-        </tr>
-        <% end %>
-
+      <% end %>
+    </table>
   </body>
 </html>
