@@ -1,12 +1,14 @@
-<p1>Article-ID: <%= @article.id %> </p1><br>
+<div class="container">
+  <p1>Article-ID: <%= @article.id %> </p1><br>
 
 <p3> Title: </p3><br>
  <%= @article.title %>
  <br>
 <p3> Description:</p3><br>
- <%= @article.description %>
+ <p style="white-space:wrap; " ><%= @article.description %></p>
  <br>
  <br>
 <%= link_to "Back to the article list", articles_path%>
 <br>
 <%= link_to "edit", edit_article_path(@article)%>
+div class

@@ -4,13 +4,21 @@ $navbar-default-border: left;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.sidebar-nav {
-
+.side-navigation {
   margin: 1em;
   z-index: -1;
-  width:12em;
+  width:auto;
+  max-width: 12em;
   height: auto;
   text-align: left;
+}
+
+
+
+.footer {
+
+  text-align: left;
+  position: static;
 }
 
 #logo {
@@ -18,11 +26,12 @@ $navbar-default-border: left;
 }
 
 .jumbotron {
+  width:36em;
   background-image: asset-url("beauties.jpg");
-  background-opacity: 0.2;
-  background-size: 750px auto;
-  background-position: top right;
+  background-size: auto;
+  background-position: top left;
 }
+
 .center{
   text-align: center;
 }
@@ -38,20 +47,21 @@ $navbar-default-border: left;
   line-height: 0.2;
 }
 
-#tbcolumn {
-  padding-right: 1em;
-}
+
 
 .content-area{
+  text-align: left;
   border-style:solid;
   border-width:1px;
   border-color: #A4A4A4;
   padding:1em;
   margin:1em;
   font-family: "Myriad Pro", sans;
-  position: relative;
   float:left;
-  width:40em;
+  width: auto;
+  max-width: 40em;
+  #tbcolumn { padding-right: 2.5em;}
+
   p1 {
     font-family: "Arial", sans;
     font-size: 2em;
